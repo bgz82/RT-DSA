@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RT-DSA</string>
+    <string name="name_hint">Name the person in the picture</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    
+    
+ <string-array name="events">
+        <item>Event 1</item>
+    </string-array>
+</resources>

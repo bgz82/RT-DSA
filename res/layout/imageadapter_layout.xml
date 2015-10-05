@@ -1,0 +1,97 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+ 
+ <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:paddingLeft="2dp"
+            android:paddingRight="8dp" >
+
+            <ImageView
+                android:id="@+id/imageicon"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="Image"
+                android:adjustViewBounds="true"
+                android:scrollbarAlwaysDrawHorizontalTrack="false"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/latt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/imageicon"
+                android:singleLine="true"
+                android:text="Lattitude" />
+
+            <TextView
+                android:id="@+id/longg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/latt"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/imageicon"
+                android:singleLine="true"
+                android:text="Longitude" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/location"
+                android:layout_below="@+id/longg"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/imageicon"
+                android:singleLine="true"
+                android:text="Description" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/location"
+                android:layout_below="@+id/description"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/imageicon"
+                android:singleLine="true"
+                android:text="TimeStamp" />
+            
+            <TextView
+                android:id="@+id/updated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/location"
+                android:layout_below="@+id/time"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/imageicon"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:text="Updated" />
+            
+            
+        </RelativeLayout>
+
+</HorizontalScrollView>
+</LinearLayout>

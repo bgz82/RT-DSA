@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/img_btns"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/takePicture"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonshape"
+        android:onClick="takePictureClick"
+        android:shadowColor="#80A8A5"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="IMAGING"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/event"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/dispPicture"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/takePicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttonshape"
+        android:onClick="dispPictureClick"
+        android:shadowColor="#80A8A5"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="DATABASE"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/googleMap"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/dispPicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttonshape"
+        android:onClick="getMap"
+        android:shadowColor="#80A8A5"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="GIS ANALYSIS"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    
+    <Button
+        android:id="@+id/uploadData"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/googleMap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttonshape"
+        android:onClick="uploadData"
+        android:shadowColor="#80A8A5"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="UPLOAD DATA"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+    
+    
+    <Spinner
+        android:id="@+id/event"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:entries="@array/events" />
+
+</RelativeLayout>

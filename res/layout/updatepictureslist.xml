@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/adaptName1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#000066"
+        android:padding="10dp"
+        android:text="Uploaded Images List"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+<!--     <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_height="wrap_content" />
+ -->
+    <TextView
+        android:id="@+id/hideText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#0000FF"
+        android:textSize="20sp"
+        android:text="Uploading Images ..." />
+
+      <ProgressBar
+        android:id="@+id/pbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentLeft="true" />
+  
+     <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#0000FF"
+        android:textSize="18sp"
+        android:text="Status" />
+     
+     
+<!--      <TextView
+        android:id="@+id/complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="pbar"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="right"
+        android:textColor="#0000FF"
+        android:textSize="18sp"
+        android:text="Complete" />
+     
+ -->     
+    <ListView
+        android:id="@+id/imageList1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:dividerHeight="3dp" />
+
+</LinearLayout>
+
+<!-- style="?android:attr/progressBarStyleHorizontal" -->
